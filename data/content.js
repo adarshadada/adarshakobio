@@ -204,6 +204,25 @@ window.SITE = {
           ]
         }
       ]
+    },
+    {
+      "slug": "test",
+      "title": "Test",
+      "showTitle": true,
+      "blocks": [
+        {
+          "type": "image",
+          "src": "images/1000034610-mwrtqqrx.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
     }
   ]
 };
