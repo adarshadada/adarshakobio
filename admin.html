@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin | np_been</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="ahead"><strong class="mono">np_been admin</strong><a class="mono" href="index.html">View site</a></header>
+<main>
+<section id="login">
+<h1>Admin</h1>
+<p class="lead">Edit every page of the site and save it straight to your GitHub repo.</p>
+<label for="repo">GitHub repo (owner/name)</label>
+<input id="repo" type="text" autocomplete="off" placeholder="yourname/yourrepo">
+<label for="branch">Branch</label>
+<input id="branch" type="text" value="main" autocomplete="off">
+<label for="token">Access token</label>
+<input id="token" type="password" autocomplete="off">
+<label class="chk"><input type="checkbox" id="remember"> Remember on this device</label>
+<div class="row"><button class="btn" id="connect" type="button">Connect</button><button class="btn alt" id="local" type="button">Edit without GitHub</button></div>
+<details><summary>How to get a token</summary>
+<ol>
+<li>On GitHub open Settings, Developer settings, Fine-grained tokens, then Generate new token.</li>
+<li>Under Repository access choose Only select repositories and pick this site’s repo.</li>
+<li>Under Permissions set Contents to Read and write.</li>
+<li>Generate it and paste it above. The token stays in this browser and is only sent to GitHub.</li>
+</ol>
+<p class="meta">Anyone can open this page, but nobody can change the site without a token. Do not share yours. “Edit without GitHub” lets you edit text here and download the result, but it cannot upload photos.</p>
+</details>
+</section>
+
+<section id="app" hidden>
+<div class="bar"><span class="meta" id="mode"></span><span class="meta" id="state"></span>
+<button class="btn sm" id="save" type="button">Save</button>
+<button class="btn alt sm" id="dl" type="button">Backup</button>
+<button class="btn alt sm" id="out" type="button">Disconnect</button></div>
+<h2>Site</h2>
+<div id="siteFields"></div>
+<h2>Pages</h2>
+<div id="pages"></div>
+</section>
+<p class="meta" id="msg" role="status" aria-live="polite"></p>
+</main>
+</div>
+<script src="data/content.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
