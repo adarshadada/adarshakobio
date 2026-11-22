@@ -215,12 +215,6 @@ window.SITE = {
           "src": "images/1000034610-mwrtqqrx.jpg",
           "alt": "",
           "caption": ""
-        },
-        {
-          "type": "image",
-          "src": "",
-          "alt": "",
-          "caption": ""
         }
       ]
     }
